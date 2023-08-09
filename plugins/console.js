@@ -1,5 +1,3 @@
-const { declare } = require('@babel/helper-plugin-utils');
-
 const targetCalleeName = ['log', 'info', 'error', 'debug'].map(item => `console.${item}`);
 
 const parametersInsertPlugin = ({ types, template }, options, dirname) => {
